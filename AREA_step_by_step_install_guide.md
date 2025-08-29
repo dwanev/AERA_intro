@@ -45,12 +45,11 @@ Git is a source control program that allows getting code from github, and pushin
 	Configuration 'Release|Win32': changing Platform Toolset to 'v143' (was 'v141').
 
  - 4.4 As per the screenshots and instructions:
- - ![image](https://github.com/dwanev/AERA_intro/tree/main/resources/images/Screenshot 2025-08-19 at 11.28.53b.png)
+ - ![image](https://github.com/dwanev/AERA_intro/tree/main/resources/images/Screenshot2025-08-19at11.28.53b.png)
   "In the Solution Configurations drop-down, make sure you select Release (unless you plan to debug AERA).  
   In the Solution Options drop-down, make sure you select Win32.  
   On the Build menu, click Build Solution. (Don't worry about all the compiler warnings.)". 
-- ![image](./resources/images/Screenshot 2025-08-19 at 11.29.16.png)
-
+- ![image]('./resources/images/Screenshot 2025-08-19 at 11.29.16.png')
  - This will have built AERA.exe and other files in the ./Release directory.
  - 4.5 AERA.exe is an executable that can be copied to other machines, and run on them. (Note, the other .lib, .dll, .exp etc files may need to be copied as well) 
 
