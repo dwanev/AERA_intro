@@ -183,7 +183,7 @@ To install Qt Framework: (see https://github.com/IIIM-IS/AERA_Visualizer/blob/ma
 
    
 
-# 11) Releasing AERA_Visualiser  (==in progress==)
+# 11) Releasing AERA_Visualiser  (== TBC ==)
  - 11.1 In VS open solution "AERA_Visualizer.sln"
 
 Select Release
@@ -192,7 +192,7 @@ Run via "Local Window Debugger"
 
 
 
-# 12) Running the GUI inside Visual Studio (VS) (==in progress==)
+# 12) Running the GUI inside Visual Studio (VS) (== TBC ==)
 
  - 12.1 Open a command window (cmd.exe) and move to the directory the Release directory of AERA_Visualizer
    - for me this was aera\AERA_Visualizer\x64\Release
@@ -200,3 +200,4 @@ Run via "Local Window Debugger"
    - aera\AERA_Visualizer\x64\Release>windeployqt AeraVisualizer.exe
 
 
+# 13) Concrete examples on AERA, inputs outputs meaning etc. (== TBC ==)
