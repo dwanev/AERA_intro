@@ -45,7 +45,7 @@ Git is a source control program that allows getting code from github, and pushin
 	Configuration 'Release|Win32': changing Platform Toolset to 'v143' (was 'v141').
 
  - 4.4 As per the screenshots and instructions:
- - ![image](./resources/images/Screenshot 2025-08-19 at 11.28.53b.png)
+ - ![image](resources/images/Screenshot 2025-08-19 at 11.28.53b.png)
   "In the Solution Configurations drop-down, make sure you select Release (unless you plan to debug AERA).  
   In the Solution Options drop-down, make sure you select Win32.  
   On the Build menu, click Build Solution. (Don't worry about all the compiler warnings.)". 
