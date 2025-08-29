@@ -4,9 +4,7 @@
 Project to hold my notes on the  Autocatalytic Endogenous Reflective Architecture (AERA) framework.
 Specifically what steps I did to get it running.
 
-
 Status: As at August 2025 I can build and run AERA, but I currently can not get the visualiser to work, I suspect this has to do with QT paths or instalation. 
-
 
 
 # Step by sep guide to getting AERA running on Windows 11 (I did this inside parallels on a macbook) 
@@ -48,7 +46,7 @@ Git is a source control program that allows getting code from github, and pushin
  - 4.1 Open the project (the ./AERA/AERA.sln file) in Visual Studio
  - 4.2 It should look something like:
  
-![image](./resources/images/Screenshot 2025-08-19 at 11.28.53a.png)
+![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at11.28.53a.png)
 
  - 4.3 TODO These popped up in my installation, I do not know if they are important, if they are just because default versions have changed since last set of instructions were written.
 	Configuration 'DebugVisualizer|Win32': changing Platform Toolset to 'v143' (was 'v141').
@@ -138,7 +136,7 @@ To install Qt Framework: (see https://github.com/IIIM-IS/AERA_Visualizer/blob/ma
  - 6.4 run qt-opensource-windows-x86-5.14.2.exe
  - 6.5 you will need to create a QT account, with an email and password. QT will validate the email.
  - 6.6. during the installation, in the installer on the "Select Components" tab, expand "Qt 5.14.2" and select "MSVC 2017 64-bit". (see image)
- ![image](./resources/images/Screenshot 2025-08-19 at 14.13.53.png)
+ ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at14.13.53.png)
  - 6.7 When the installer is finished, you can uncheck "Launch Qt Creator" since we don't need to run it, we use it as a library.
 
 
@@ -151,42 +149,42 @@ To install Qt Framework: (see https://github.com/IIIM-IS/AERA_Visualizer/blob/ma
  - Set the QTDIR environment variable do the following:
    - 8.1 with Visual Studio closed:
    - 8.2 Open the System control panel.
-   ![image](./resources/images/Screenshot 2025-08-19 at 15.58.33.png)
+   ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at15.58.33.png)
    - 8.3 Click Advanced System Settings. 
    - 8.4 Click Environment Variables. 
-   ![image](./resources/images/Screenshot 2025-08-19 at 15.59.02.png)
+   ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at15.59.02.png)
    - 8.5 In the "System variables" section, click New... 
    - 8.6 In Variable name enter QTDIR . 
-  ![image](./resources/images/Screenshot 2025-08-19 at 15.59.25.png)
+  ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at15.59.25.png)
    - 8.7 In Variable value enter the directory such as C:\Qt\Qt5.14.2\5.14.2\msvc2017_64        (was  C:\Qt\5.14.2\msvc2017_64 in old documentation)
-   ![image](./resources/images/Screenshot 2025-08-19 at 16.02.10.png )
+   ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at16.02.10.png )
    - 8.8 Repeatedly click OK to close all the windows.
 
 9) Add the location of the exeutible Qt files to the path
  - 9.1 For me this was C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin
- ![image](./resources/images/Screenshot 2025-08-29 at 07.23.14.png)
+ ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-29at07.23.14.png)
 
 # 10) AERA Visualiser Prerequisite: Configure Visual Studio Tools so that QT can be found and used.
 
  - 10.1 Launch Visual Studio. 
  - 10.2 On the "splash" screen, click "continue without code". 
  - 10.3 On the Extensions menu, select Manage Extensions
-   ![image](./resources/images/Screenshot 2025-08-19 at 16.19.49a.png)
+   ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at16.19.49a.png)
  - 10.5 in the browse search bar type 'qt'.                         (this brings up the wrong version. does it matter?)
 
-   ![image](./resources/images/Screenshot 2025-08-19 at 16.10.05.png)
+   ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at16.10.05.png)
 
  - 10.6 On 'Qt Visual Studio Tools' click 'install'
  - 10.7 close  Visual Studio (to start the installation)
  - 10.8 Click "Qt VS Tools" then "Qt Versions". Click "". Click the folder icon and select the path containing  bin/qmake.exe.  
      e.g.      C:\Qt\Qt5.14.2\5.14.2\msvc2017_64
-     ![image](./resources/images/Screenshot 2025-08-19 at 16.20.49.png)
+     ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at16.20.49.png)
  - 10.9 click OK
 
    
 
-
- - 9.1 In VS open solution "AERA_Visualizer.sln"
+# 11) Releasing AERA_Visualiser  (==in progress==)
+ - 11.1 In VS open solution "AERA_Visualizer.sln"
 
 Select Release
 Select "x64"
@@ -194,9 +192,9 @@ Run via "Local Window Debugger"
 
 
 
-# 11) Running the GUI inside Visual Studio (VS)
+# 12) Running the GUI inside Visual Studio (VS) (==in progress==)
 
- - 11.1 Open a command window (cmd.exe) and move to the directory the Release directory of AERA_Visualizer
+ - 12.1 Open a command window (cmd.exe) and move to the directory the Release directory of AERA_Visualizer
    - for me this was aera\AERA_Visualizer\x64\Release
  - run the tool that builds the Qt parts of the project, something like:
    - aera\AERA_Visualizer\x64\Release>windeployqt AeraVisualizer.exe
