@@ -7,7 +7,7 @@ https://openaera.org/
 https://openaera.org/faq/  
 https://github.com/IIIM-IS/AERA   
 
-Status: As at August 2025 I can build and run AERA, the visualiser compiles, but I get an error when attempting to run it. I suspect this has to do with QT paths or installation. 
+Status: As at August 2025 I can build and run AERA, and the visualiser compiles, but I get an error when attempting to run the visualiser. I suspect this has to do with QT paths or installation. 
 
 
 # Step by sep guide to getting AERA running on Windows 11 (I did this inside parallels on a macbook) 
