@@ -1,10 +1,13 @@
 
 # AERA
+ 
+This README is the specific steps I took to get the Autocatalytic Endogenous Reflective Architecture (AERA) framework running.
+For more general documentation see:  
+https://openaera.org/  
+https://openaera.org/faq/  
+https://github.com/IIIM-IS/AERA   
 
-Project to hold my notes on the  Autocatalytic Endogenous Reflective Architecture (AERA) framework.
-Specifically what steps I did to get it running.
-
-Status: As at August 2025 I can build and run AERA, but I currently can not get the visualiser to work, I suspect this has to do with QT paths or instalation. 
+Status: As at August 2025 I can build and run AERA, the visualiser compiles, but I get an error when attempting to run it. I suspect this has to do with QT paths or installation. 
 
 
 # Step by sep guide to getting AERA running on Windows 11 (I did this inside parallels on a macbook) 
