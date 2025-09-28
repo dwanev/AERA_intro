@@ -10,7 +10,7 @@ https://github.com/IIIM-IS/AERA
 Status: As at August 2025 I can build and run AERA, and the visualiser compiles, but I get an error when attempting to run the visualiser. I suspect this has to do with QT paths or installation. 
 
 
-# Step by sep guide to getting AERA running on Windows 11 (I did this inside parallels on a macbook) 
+# Step by step guide to getting AERA running on Windows 11 (I did this inside parallels on a macbook) 
 
 Last updated August 2025
 
@@ -50,20 +50,20 @@ Git is a source control program that allows getting code from github, and pushin
  - 4.2 It should look something like:
  
 ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at11.28.53a.png)
-
- - 4.3 TODO These popped up in my installation, I do not know if they are important, if they are just because default versions have changed since last set of instructions were written.
+ - 4.3 (optional) Configure extra debugging information to be written so that the visualiser can be used.
+        See https://github.com/IIIM-IS/AERA/blob/master/INSTALL.md#with_detail_oid
+ - 4.4 Information - These popped up in my installation, I do not know if they are important, if they are just because default versions have changed since last set of instructions were written.
 	Configuration 'DebugVisualizer|Win32': changing Platform Toolset to 'v143' (was 'v141').
 	Configuration 'Debug|Win32': changing Platform Toolset to 'v143' (was 'v141').
 	Configuration 'Release|Win32': changing Platform Toolset to 'v143' (was 'v141').
-
- - 4.4 As per the screenshots and instructions:
+ - 4.5 As per the screenshots and instructions:
  - ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at11.28.53a.png)
   "In the Solution Configurations drop-down, make sure you select Release (unless you plan to debug AERA).  
   In the Solution Options drop-down, make sure you select Win32.  
   On the Build menu, click Build Solution. (Don't worry about all the compiler warnings.)". 
 - ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at11.29.16.png)
  - This will have built AERA.exe and other files in the ./Release directory.
- - 4.5 AERA.exe is an executable that can be copied to other machines, and run on them. (Note, the other .lib, .dll, .exp etc files may need to be copied as well) 
+ - 4.6 AERA.exe is an executable that can be copied to other machines, and run on them. (Note, the other .lib, .dll, .exp etc files may need to be copied as well) 
 
 # 5) Running AERA
 
@@ -184,23 +184,23 @@ To install Qt Framework: (see https://github.com/IIIM-IS/AERA_Visualizer/blob/ma
      ![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at16.20.49.png)
  - 10.9 click OK
 
-   
-
-# 11) Releasing AERA_Visualiser  (== TBC ==)
+# 11) Running the AERA_Visualiser  
  - 11.1 In VS open solution "AERA_Visualizer.sln"
+ - 11.2 Select Release
+ - 11.3 Select "x64"
+ - 11.4 Run via "Local Window Debugger"
+ - 11.5 If you get the following error, it means that not all the information was saved into the output file, 'decompiled_objects.txt', which are read by the visualiser. To fix follow the instructions at https://github.com/IIIM-IS/AERA/blob/master/INSTALL.md#with_detail_oid
+![image](https://github.com/dwanev/AERA_intro/blob/main/resources/images/Screenshot2025-08-19at16.47.55.png)
 
-Select Release
-Select "x64"
-Run via "Local Window Debugger"
+#  
+ - 11.6 deploy the app using windeployqt (this only needs to be done once)
+   - Open a command window (cmd.exe) and move to the directory the Release directory of AERA_Visualizer
+     - for me this was aera\AERA_Visualizer\x64\Release
+   - run the tool that builds the Qt parts of the project, something like:
+````
+   aera\AERA_Visualizer\x64\Release>windeployqt AeraVisualizer.exe
+````
 
 
-
-# 12) Running the GUI inside Visual Studio (VS) (== TBC ==)
-
- - 12.1 Open a command window (cmd.exe) and move to the directory the Release directory of AERA_Visualizer
-   - for me this was aera\AERA_Visualizer\x64\Release
- - run the tool that builds the Qt parts of the project, something like:
-   - aera\AERA_Visualizer\x64\Release>windeployqt AeraVisualizer.exe
-
-
-# 13) Concrete examples on AERA, inputs outputs meaning etc. (== TBC ==)
+# 12) Concrete AERA examples
+TBC
